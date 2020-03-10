@@ -17,3 +17,10 @@ Using HTML attribute style (`name="World"`), instead of JSON style (`{ name: "Wo
 
 ### Outputting data in HTML
 JSX using `{variable}` and plain JS template literals use `${variable}`.
+
+### `class="title"` vs `className="title"` 
+
+This shows an important different between the template literal HTML and JSX.  With the tempalte literal, we are writing the exact HTML that will be displayed.  With JSX, we are create a representation of HTML that will later be compiled to HTML.  There are 2 important things are attribute names in JSX:
+
+1. They are always camel-case e.g. `autoComplete` instead of `autocomplete`.
+2. They can't use reserved JavaScript keywords.  `class` is a JavaScript keyword, so JSX can't use it in JSX.

@@ -1,19 +1,19 @@
-# Task
+# Hello World React
 
+Showing a few difference between creating and rendering with React vs plain JavaScript.
 
+React is in react.html and react.js and plain JS is in plain.html and plain.js.
 
-**Note:** Styles are provided for you in master.css. Look in the file to find the approriate class names to use on your HTML elements.
+## Some Differences
 
-### Example
+### JSX
+the main difference is JSX. JSX is not available in JavaScript and must be compiled.  Because of this Babel must be used.  JSX replaces the template literal string.  It is important to know that JSX is **not** a string.  It will get compiled down to React objects.
 
-[The example is here](https://link).
+### First render
+Pass root DOM and root component to `ReactDOM.render()`.
 
-## Task
+### Passing props to components
+Using HTML attribute style (`name="World"`), instead of JSON style (`{ name: "World" }`).  Note that the style is different but produces the same props object.  Inside the App component, the props object is exactly the same for both examples.
 
-Clone or download this repository onto your computer.  You will start out in the "master" branch which contains an empty project.
-
-Try to recreate the website above.  Firstly, try to create it without any help.  If you are unsure of what to do, you can follow the steps below.  If the steps don't help, checkout out the "answer" branch from this repository.  The answer branch contains a working example.
-
-## Steps
-
-1. 
+### Outputting data in HTML
+JSX using `{variable}` and plain JS template literals use `${variable}`.
